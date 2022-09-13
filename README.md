@@ -1,4 +1,4 @@
-# definition-acronym-extraction
+# acronym-definition-extraction
 This code allows users to extract acronym-definition pairs.\
 Input can be a text or pdf file.\
 Output is a json file including pairs.\
