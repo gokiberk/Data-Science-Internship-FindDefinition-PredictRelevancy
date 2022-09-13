@@ -135,6 +135,8 @@ if( fileReceived):
             index = len(tuple(itertools.takewhile(lambda x: (dataDeleteNewlineList[k]) not in x, dataList))) #when dataStr is splitted, it doesn't work with expressions that have space
             length = len(dataDeleteNewlineList[k]) - 2
             span = length + spanVar[j]
+            
+            # couldn't test this if block, can be eliminated if necessary
             if (span <= min(length*2, length+5)):
                 i = span
                 definition = ""
@@ -164,7 +166,16 @@ if( fileReceived):
         f.write(checkDefList)
         f.close()
         checkDefList = ""
-        chcekDef = ""
+        checkDef = ""
+        
+        # can be uncommented to delete txt files passed to algorithm
+        """
+        file_path = checkDefListTxt
+        if os.path.isfile(file_path):
+            os.remove(file_path)
+        print("Deleted temporary txt files.")
+        """
+        
 
         pairs = schwartz_hearst.extract_abbreviation_definition_pairs(file_path=checkDefListTxt)     
         print( "Number of acronym-definition pairs: " + str(len(pairs)) )
