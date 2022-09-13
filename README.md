@@ -6,15 +6,15 @@ Optional operation is merging with a larger json file containing acronym-definit
 
 # How to run
 
-### requirements
+### Requirements
+```
 pip install abbreviations
-
+```
 ### Example commands to run
 ```
 python3 findDefinitions.py -p pdfs/doc.pdf -jo abbreviations.json
 python3 findDefinitions.py -t pdfs/doc_Text.txt -jo abbreviations.json -ji abbreviationsList.json
 ```
-
 ### args
 Choose between -t and -p, -jo is required, -ji is optional
 ```
@@ -23,10 +23,6 @@ Choose between -t and -p, -jo is required, -ji is optional
 ("--jsonOutput", "-jo", help="set output json filename, must be .json")
 ("--jsonInput", "-ji", help="set JSON filename to append, must be .json")
 ```
-
-
-
-
 # Outputs
 - If pdf is being processed, txt file with \_Text suffix is generated.\
 e.g. doc_Text.txt
@@ -36,8 +32,6 @@ e.g. passToSchwartz3.txt
 e.g. abbreviations.json
 - Modified json input file that new pairs are appended to. \
 e.g. myAbbreviationsList.json
-
-
 # Things to be improved
 Doesn't catch turkish definitions with english acronyms. Translate possible definitions to english then pass to schwartz algorithm again
 
