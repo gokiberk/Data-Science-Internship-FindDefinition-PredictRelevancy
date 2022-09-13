@@ -33,14 +33,19 @@ e.g. abbreviations.json
 - Modified json input file that new pairs are appended to. \
 e.g. myAbbreviationsList.json
 # Things to be improved
-- Doesn't catch turkish definitions with english acronyms. Translate possible definitions to english then pass to schwartz algorithm again.\
+- Doesn't catch turkish definitions with english acronyms.\ 
 e.g. Gece Görüş Görüntüleme Sistemi (NVIS)
+Translate possible definitions to english then pass to schwartz algorithm again.
 - Sometimes catches false pairs.\
-Especially when there is no real definition to acronym. e.g. 'KATMANSİS': 'Kablolar için Mantarlaşma Testi (TS4348) bulunmaktadır. SSB’nin bir TKY projesi'\
-or letters do not match e.g. 'ARISİM': 'artış yaratmaktadır. T-38 TEKAMÜL EĞİTİM UÇAĞİ SİMÜLATÖRLERİ'.\
+Especially when there is no real definition to acronym.\
+e.g. 'KATMANSİS': 'Kablolar için Mantarlaşma Testi (TS4348) bulunmaktadır. SSB’nin bir TKY projesi'\
+or letters do not match\
+e.g. 'ARISİM': 'artış yaratmaktadır. T-38 TEKAMÜL EĞİTİM UÇAĞİ SİMÜLATÖRLERİ'.\
 If definition includes a full stop, those words before full stop can be deleted from the definitions to reduce false pairs.
 - If letters of acronym match do not match enough with definitions, usually acronym definitions cannot be encountered. In these cases acronyms are too short for the gicen definition, almsot looks like nicknames for projects.\
-e.g. Denizaltı Savunma Harbi ve Keşif Karakol Milli Gemisi (MİLGEM), SONAR ENTEGRE DENIZALTI KOMUTA KONTROL SISTEMI (SEDA), Mekânsal Adres Kayıt Sistemi Veri Üretimi ve Yaygınlaştırma Projesi (MAKS)
+e.g. Denizaltı Savunma Harbi ve Keşif Karakol Milli Gemisi (MİLGEM), SONAR ENTEGRE DENIZALTI KOMUTA KONTROL SISTEMI (SEDA), Mekânsal Adres Kayıt Sistemi Veri Üretimi ve Yaygınlaştırma Projesi (MAKS).\
+Algortihm developed by Schwartz and Hearst can be improved in candidate selection methods.
+
 
 
 
