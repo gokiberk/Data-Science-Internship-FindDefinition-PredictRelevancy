@@ -34,7 +34,9 @@ e.g. abbreviations.json
 e.g. myAbbreviationsList.json
 # Things to be improved
 - Doesn't catch turkish definitions with english acronyms. Translate possible definitions to english then pass to schwartz algorithm again
-- Sometimes catches false pairs e.g.  
-'KATMANSİS': 'Kablolar için Mantarlaşma Testi (TS4348) bulunmaktadır. SSB’nin bir TKY projesi'
-![image](https://user-images.githubusercontent.com/61826514/189896251-2115ee3d-4457-4ec7-871f-9939758d0c63.png)
+- Sometimes catches false pairs.\ Especially when there is no real definition to acronym. e.g. 'KATMANSİS': 'Kablolar için Mantarlaşma Testi (TS4348) bulunmaktadır. SSB’nin bir TKY projesi' or letters do not match e.g. 'ARISİM': 'artış yaratmaktadır. T-38 TEKAMÜL EĞİTİM UÇAĞİ SİMÜLATÖRLERİ'. If definition includes a full stop, those words before full stop can be deleted from the definitions to reduce false pairs.
+- If letters of acronym doesn't match with definition 
+
+
+
 
