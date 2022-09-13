@@ -124,8 +124,10 @@ if( fileReceived):
     found = 0
     defList = list(0 for i in range(0,len(dataDeleteNewlineList)))
     notFoundList = list(1 for i in range(0,len(dataDeleteNewlineList)))
-
-    spanVar = [-1, 2, 5]
+    
+    # spanVar describes how many words before the acronym will be taken and passed to schwartz-hears algorithm. can be modified as desired.
+    # spanVar appers in passToSchwartz text files
+    spanVar = [-1, 0, 1, 2, 3, 4, 5]
     j = len(spanVar)
     checkDefList = ""
     for j in range(len(spanVar)):
