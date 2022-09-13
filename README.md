@@ -7,7 +7,13 @@ Optional operation is merging with a larger json file containing acronym-definit
 # How to run
 
 ### requirements
+pip install abbreviations
 
+### Example commands to run
+```
+python3 findDefinitions.py -p pdfs/doc.pdf -jo abbreviations.json
+python3 findDefinitions.py -t pdfs/doc_Text.txt -jo abbreviations.json -ji abbreviationsList.json
+```
 
 ### args
 Choose between -t and -p, -jo is required, -ji is optional
@@ -19,11 +25,7 @@ Choose between -t and -p, -jo is required, -ji is optional
 ```
 
 
-# Example commands to run
-```
-python3 findDefinitions.py -p pdfs/doc.pdf -jo abbreviations.json
-python3 findDefinitions.py -t pdfs/doc_Text.txt -jo abbreviations.json -ji abbreviationsList.json
-```
+
 
 # Outputs
 - If pdf is being processed, txt file with \_Text suffix is generated.\
