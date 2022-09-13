@@ -21,13 +21,13 @@ python3 findDefinitions.py -t pdfs/doc_Text.txt -jo abbreviations.json -ji abbre
 ```
 
 # Outputs
-If pdf is being processed, txt file with \_Text suffix is generated.\
+- If pdf is being processed, txt file with \_Text suffix is generated.\
 e.g. doc_Text.txt\
-passToSchwartz text files are generated within the span depending on acronyms' length.\
+ -passToSchwartz text files are generated within the span depending on acronyms' length.\
 e.g. passToSchwartz3.txt\
-Json file including recently encountered acronym-definition pairs.\
+- Json file including recently encountered acronym-definition pairs.\
 e.g. abbreviations.json\
-Modified json input file that new pairs are appended to. \
+- Modified json input file that new pairs are appended to. \
 e.g. myAbbreviationsList.json\
 
 
