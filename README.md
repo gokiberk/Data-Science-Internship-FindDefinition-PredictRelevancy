@@ -2,7 +2,7 @@
 This code allows users to extract acronym-definition pairs.\
 Input can be a text or pdf file.\
 Output is a json file including pairs.\
-Optional operation is merging with a larger json file containin pairs.
+Optional operation is merging with a larger json file containing acronym-definition pairs. This will modify the input json file and recently encountered pairs will be merged with input file. In case of having the same acronym in input file, it is kept instead of adding new pair.
 
 # args
 Choose between -t and -p, -jo is required, -ji is optional
