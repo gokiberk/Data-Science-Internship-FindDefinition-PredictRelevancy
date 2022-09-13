@@ -5,10 +5,13 @@ Output is a json file including pairs.\
 Optional operation is merging with a larger json file containin pairs.\
 
 # args
-("--text", "-t", help="set text input directory")\
-("--pdf", "-p", help="set pdf input directory")\
-("--jsonOutput", "-jo", help="set output json filename, must be .json")\
-("--jsonInput", "-ji", help="set JSON filename to append, must be .json")\
+```
+("--text", "-t", help="set text input directory")
+("--pdf", "-p", help="set pdf input directory")
+("--jsonOutput", "-jo", help="set output json filename, must be .json")
+("--jsonInput", "-ji", help="set JSON filename to append, must be .json")
+```
+
 
 # Example commands to run
 ```
