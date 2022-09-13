@@ -198,8 +198,8 @@ if( fileReceived):
 
     
 #else file not received
-    else:
-        print("File not received.")    
+else:
+    print("File not received.")    
 
 
 
