@@ -5,6 +5,7 @@ Output is a json file including pairs.\
 Optional operation is merging with a larger json file containin pairs.\
 
 # args
+Choose between -t and -p, -jo is required, -ji is optional\
 ```
 ("--text", "-t", help="set text input directory")
 ("--pdf", "-p", help="set pdf input directory")
