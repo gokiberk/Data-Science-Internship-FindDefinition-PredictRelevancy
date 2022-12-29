@@ -1,5 +1,5 @@
-# STM
+# Data Science Internship
 
-My work done during my internship at STM - Big Data Department.
+My work done during my internship at Big Data Department.
 
-Finding definitions of acronyms in text and predicting relevance of texts to SSB using ML.
+Finding definitions of acronyms in text and predicting relevance of texts using ML.
